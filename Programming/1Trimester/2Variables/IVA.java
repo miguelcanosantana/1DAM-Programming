@@ -7,7 +7,8 @@ public class IVA {
   double iphone= 1250.5;
   double precioSin = aguab + aguacate + mazorca + cd24k + iphone;
   double precioIva = precioSin * 1.21;
-  
+  System.out.println ("Wellcome to the \"Spanish Typical Supermarket\"");
+  System.out.println ("---------------------------------------------");
   System.out.println ("Avocado = " + aguacate + "(€)");
   System.out.println ("Bezoya Water= " + aguab + "(€)");
   System.out.println ("Corn = " + mazorca + "(€)");
@@ -18,4 +19,3 @@ public class IVA {
   System.out.println ("Price with IVA = " + (float) precioIva + "(€)");
   }
 }
-
