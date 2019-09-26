@@ -16,7 +16,5 @@ public class Schedule {
   System.out.println("║BBDD ║ SINF ║  BBDD   ║  LM  ║  FOL  ║");
   System.out.println("╚═════╩══════╩═════════╩══════╩═══════╝");
   }
-    
-    	
 }
 
