@@ -9,6 +9,7 @@ public class CharString {
   char s = 's';
   String ma = "ma";
   char l = 'l';
-  System.out.println(" " + m + y + " " + h + ou + se + " " + i + s + " " + s + ma + l + l);
+  //Add "" before chars to make them available to be printed correctly as letters and not as numbers
+  System.out.println("" + m + y + " " + h + ou + se + " " + i + s + " " + s + ma + l + l);
   }
 }
