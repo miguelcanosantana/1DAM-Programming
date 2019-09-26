@@ -20,7 +20,7 @@ public class CharChain {
     char o = 'ó';
     char n = 'n';
     //Add space before any letters
-    String all = " " + l + i+ m + o + n;
+    String all = "" + l + i+ m + o + n;
   
     System.out.println(all);
   }
