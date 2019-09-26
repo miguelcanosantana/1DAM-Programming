@@ -3,7 +3,7 @@ public class SimpleMath {
     int x = 144;
     int y = 999;
     System.out.println("X value is "+ x);
-    System.out.println("Y calue is "+ y);
+    System.out.println("Y value is "+ y);
     //Sum
     int sum = x + y;
     //Print Sum
