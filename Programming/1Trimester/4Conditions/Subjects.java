@@ -23,7 +23,25 @@ public class Subjects {
       break;
       
       case "saturday":
+      
+      case "sunday":
+      
+      
+        String didyou;
+        System.out.println("Please tell me you didn't come to the school today, did you?");
+        didyou = (System.console().readLine());
+        didyou.toLowerCase();
+        
+          if (didyou.equals("yes")) {
+            System.out.println("Well well well... you won't get a S+ because of that.");
+          }
+          
+          if (didyou.equals("no")) {
+            System.out.println("Well done, do something productive for your life.");
+          }
+  
       break;
+    
       
     default: System.out.println("Day not recognized");
     
