@@ -9,21 +9,21 @@ public class Hours {
       
       System.out.print("Good morning!");
       
-    }
+      }
       
     if ((time >= 12) && (time < 20)){
       
       System.out.print("Good afternoon!");
       
-    }
+      }
       
     if (((time >= 20) && (time <= 24)) || ((time >= 0) && (time < 6))){
       
       System.out.print("Good night!");
       
-    }
-      
-      
       }
+      
+      
     }
+  }
 
