@@ -24,7 +24,9 @@ public class AverageGradeExpanded {
     if ((g1 >= 0) && (g2 >= 0) && (g3 >= 0)) {
       double all = g1 + g2 + g3;
       double result = all / 3;
-    
+      
+      System.out.printf("Your average grade is: " + "%5.2f\n", result);
+      
       if (result < 5 ) {
          System.out.print("At least you tried...");
        
