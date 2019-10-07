@@ -8,7 +8,6 @@ public class NumberDigits {
     number = Double.parseDouble( line1 );
     
     System.out.println(number%10);
-    
   }
 }
 
