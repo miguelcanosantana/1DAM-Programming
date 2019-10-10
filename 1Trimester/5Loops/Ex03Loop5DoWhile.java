@@ -1,4 +1,4 @@
-public class Loop5DoWhile {
+public class Ex03Loop5DoWhile {
   public static void main(String[] args) { 
     int i = -5;
       do {
