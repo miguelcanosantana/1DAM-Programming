@@ -1,4 +1,4 @@
-public class Loop20DoWhile {
+public class Ex06Loop20DoWhile {
   public static void main(String[] args) { 
     int i = 340;
       do {
