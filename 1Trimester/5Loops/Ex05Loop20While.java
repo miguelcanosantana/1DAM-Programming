@@ -1,4 +1,4 @@
-public class Loop20While {
+public class Ex05Loop20While {
    public static void main(String[] args) { 
       int i = 340;
       while ( i > 160) {
