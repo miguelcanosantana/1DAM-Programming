@@ -5,7 +5,7 @@ public class Ex05IntegerNumbers50 {
     int total = 0;
     int smallest = 199;
     int biggest = 100;
-//
+    
     for (int i = 1; i <= 50; i++){
 
       do{
