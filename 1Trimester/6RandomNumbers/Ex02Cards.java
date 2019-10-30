@@ -1,7 +1,7 @@
 public class Ex02Cards {
    public static void main(String[] args) {
      System.out.println("This program is going to show a card from a deck...");
-     int shape = (int)(Math.random()*4 + 1);
+     int suit = (int)(Math.random()*4 + 1);
      int number = (int)(Math.random()*13 + 1);
   
      //Number
@@ -25,17 +25,17 @@ public class Ex02Cards {
           System.out.print("King of ");
         }
         }
-          //Shape
-          if (shape == 1){
+          //Suit (Palo)
+          if (suit == 1){
             System.out.print("♥️");
           }
-          if (shape == 2){
+          if (suit == 2){
             System.out.print("♠️");
           }
-          if (shape == 3){
+          if (suit == 3){
             System.out.print("♦️");
           }
-          if (shape == 4){
+          if (suit == 4){
             System.out.print("♣️");
           }
   }
