@@ -1,9 +1,8 @@
-# 1DAM-Exercises
+# 1DAM-Exercises Compilation Instructions
 This repository will contain all the programming exercises that I'm going to do this year at @IESCampanillas in Málaga (Spain).
-
 :coffee: :dragon_face:
 ## Source code
-This is the source code
+This an example of "source code".
 ```java
 public class HelloWorld {
   public static void main(String[] args){
