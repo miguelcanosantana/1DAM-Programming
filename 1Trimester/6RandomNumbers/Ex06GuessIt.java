@@ -23,9 +23,5 @@ public class Ex06GuessIt {
      } else {
        System.out.println("You won! :D");
      }
-
-
-
-
   }
 }
