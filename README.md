@@ -12,13 +12,13 @@ public class HelloWorld {
 ```
 `System.out.println("Hello World!");`shows the string `"Hello World!"` on the screen.
 ## Compile
-To compile the "Hello World" program type the following inside the terminal:
+To compile the any programs of this repository inside your terminal type the following:
 ```console
-javac HelloWorld.java
+javac ProgramName.java
 ```
 ## Execute
 To execute the program, type this:
 ```console
-java HelloWorld
+java ProgramName
 ```
 
