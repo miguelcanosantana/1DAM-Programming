@@ -26,7 +26,7 @@ public class Ex03SpanishCards {
         }
 
         if (number == 12){
-          System.out.print("Rey de  ");
+          System.out.print("Rey de ");
         }
         }
           //Palo
