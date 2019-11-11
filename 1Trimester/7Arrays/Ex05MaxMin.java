@@ -1,10 +1,10 @@
-public class Ex04Columns {
-  public static void main(String[] args){
-  
-    int[] number = new int [20];
-    int[] square = new int [20];
-    int[] cube = new int [20];
+import java.util.Scanner;
 
+public class Ex05MaxMin {
+  public static void main(String[] args){
+
+    int[] number = new int [20];
+    Scanner s = new Scanner(System.in);
     
     //"number" Random numbers
     for (int i = 0; i<=19; i++){
@@ -29,6 +29,10 @@ public class Ex04Columns {
     System.out.printf("%-8s %-8s %-8s\n", number[i], square[i], cube[i]);
 
   }
+ 
+
+
+
   }
 }
 
