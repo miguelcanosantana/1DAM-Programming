@@ -21,9 +21,15 @@ public class Ex04Columns {
       cube[i] = (int) Math.pow((number[i]), 3); //Each number of i elevated to 3
     }
 
+  //Print numbers
+  
   System.out.println("A table with Random numbers raised to the power of 2 and 3:");
   System.out.println("");
-  System.out.printf("%-10s %-10s\n", number[0], square[0]);
+  for (int i = 0; i<20; i++){
+    System.out.printf("%-8s %-8s %-8s\n", number[i], square[i], cube[i]);
+
+  }
+ 
 
 
 
