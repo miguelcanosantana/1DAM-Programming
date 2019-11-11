@@ -16,7 +16,7 @@ public class Ex02ArrayTableSymbols {
   simbolo[7] = '+';
   simbolo[8] = 'Q';
     
-  //Not initialized elements are shown as "null"
+  
     for (int i = 0; i <= 9; i++){
       System.out.print(simbolo[i] + " ");
     }
