@@ -25,7 +25,7 @@ public class AverageGrade {
       double result = all / 3;
       System.out.println ("Your average grade is " + result );
     }else{
-      System.out.println ("Please input valid grades");
+      System.out.println ("Please input valid grades...");
     }
     
   }

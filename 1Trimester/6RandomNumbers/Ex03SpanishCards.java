@@ -3,7 +3,7 @@ public class Ex03SpanishCards {
      System.out.println("This program is going to show a card from a spanish crads deck...");
      int palo = (int)(Math.random()*4 + 1);
      int number = 0;
-     //Se descartan los 8 y 9 de la baraja
+     //There aren't any 8 or 9
      do{
        number = (int)(Math.random()*12 + 1);
      } while ((number == 8 ) || (number == 9 ));
