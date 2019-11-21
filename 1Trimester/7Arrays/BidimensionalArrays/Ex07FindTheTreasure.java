@@ -115,9 +115,10 @@ public class Ex07FindTheTreasure{
       }
       System.out.printf("%-2s %-3s %-3s %-3s %-3s %-3s"," ","1","2","3","4","5\n");
       System.out.println();
+      System.out.println("Try again!");
+      System.out.println();
 
     }
-
     }
 
 
