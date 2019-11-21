@@ -43,7 +43,7 @@ public class Ex07FindTheTreasure{
     boolean game = true;
     boolean endedBad = false; //Checks if game ended bad
 
-    while (game = true){
+    while (game == true){
 
       //Is the first time?
       if (firstTime == 1){
@@ -120,7 +120,13 @@ public class Ex07FindTheTreasure{
         }
         System.out.printf("%-2s %-3s %-3s %-3s %-3s %-3s"," ","1","2","3","4","5\n");
         System.out.println();
-        System.out.println("Try again!");
+        
+        if (game == true){
+          System.out.println("Try again!");
+        } else {
+
+        }
+
         System.out.println();
 
       }
