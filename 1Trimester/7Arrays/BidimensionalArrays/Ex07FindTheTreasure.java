@@ -27,8 +27,6 @@ public class Ex07FindTheTreasure{
     System.out.println("The Y position of Treasure is " + (1+ treasureYPosition));
 
 
-
-
     //The drawable grid of the game
     final String[][] grid  = new String [5][5];
 
@@ -43,82 +41,89 @@ public class Ex07FindTheTreasure{
 
     //Game is playing
     boolean game = true;
+    boolean endedBad = false; //Checks if game ended bad
 
     while (game = true){
 
-    //Is the first time?
-    if (firstTime == 1){
+      //Is the first time?
+      if (firstTime == 1){
 
-      //Assign [_] by default to all elements of the array and draw it.
-      for (int i = 0; i < 5; i++){
-        System.out.print(i + 1 + " ");
-  
-        for (int k = 0; k < 5; k++){
-          grid[i][k] = "[_] ";
-          System.out.print(grid[i][k]);
+        //Assign [_] by default to all elements of the array and draw it.
+        for (int i = 0; i < 5; i++){
+          System.out.print(i + 1 + " ");
+    
+          for (int k = 0; k < 5; k++){
+            grid[i][k] = "[_] ";
+            System.out.print(grid[i][k]);
+          }
+          
+          System.out.println();
         }
-        
+        System.out.printf("%-2s %-3s %-3s %-3s %-3s %-3s"," ","1","2","3","4","5\n");
         System.out.println();
-      }
-      System.out.printf("%-2s %-3s %-3s %-3s %-3s %-3s"," ","1","2","3","4","5\n");
-      System.out.println();
 
-      //Guide
-      System.out.println("_-_-How to play-_-_");
-      System.out.println("In this game there's a hidden TREASURE in this map.");
-      System.out.println("Also there's a hidden DRAGON that protects the TREASURE.");
-      System.out.println("Try to find the TREASURE without disturbing the DRAGON.");
-      System.out.println();
-      System.out.println("Good luck! (You will need it...)");
-      firstTime = 0;
+        //Guide
+        System.out.println("_-_-How to play-_-_");
+        System.out.println("In this game there's a hidden TREASURE in this map.");
+        System.out.println("Also there's a hidden DRAGON that protects the TREASURE.");
+        System.out.println("Try to find the TREASURE without disturbing the DRAGON.");
+        System.out.println();
+        System.out.println("Good luck! (You will need it...)");
+        firstTime = 0;
 
 
-    //Other times
-    } else {
-
-      //Check input numbers are correct
-        System.out.print("Input X coordinate: ");
-        pointerX = (Integer.parseInt(s.nextLine()) -1);
-    
-        System.out.print("Input Y coordinate: ");
-        pointerY = (Integer.parseInt(s.nextLine()) -1);
-
-      //Draws result
-      if (((pointerX == treasureXPosition) && (pointerY == treasureYPosition)) || ((pointerX == dragonXPosition) && (pointerY == dragonYPosition))){
-      
-        if ((pointerX == treasureXPosition) && (pointerY == treasureYPosition)){
-          System.out.println("Treasure found!"); 
-  
-        }
-    
-        if ((pointerX == dragonXPosition) && (pointerY == dragonYPosition)){
-          System.out.println("Dragon found!");
-    
-        }
-  
+      //Other times
       } else {
-        grid[pointerY][pointerX] = "[X] ";
-        System.out.println();
-        System.out.println("Nothing found!");
-        System.out.println();
-      }
 
-      //Prints updated grid
-      for (int i = 0; i < 5; i++){
-        System.out.print(i + 1 + " ");
-  
-        for (int k = 0; k < 5; k++){
-          System.out.print(grid[i][k]);
-        }
+        //Check input numbers are correct
+          System.out.print("Input X coordinate: ");
+          pointerX = (Integer.parseInt(s.nextLine()) -1);
+      
+          System.out.print("Input Y coordinate: ");
+          pointerY = (Integer.parseInt(s.nextLine()) -1);
+
+        //Draws result
+        if (((pointerX == treasureXPosition) && (pointerY == treasureYPosition)) || ((pointerX == dragonXPosition) && (pointerY == dragonYPosition))){
         
-        System.out.println();
-      }
-      System.out.printf("%-2s %-3s %-3s %-3s %-3s %-3s"," ","1","2","3","4","5\n");
-      System.out.println();
-      System.out.println("Try again!");
-      System.out.println();
+          if ((pointerX == treasureXPosition) && (pointerY == treasureYPosition)){
+            System.out.println("Treasure found!"); 
 
-    }
+            game = false;
+            endedBad = false;
+    
+          }
+      
+          if ((pointerX == dragonXPosition) && (pointerY == dragonYPosition)){
+            System.out.println("Dragon found! 🐲");
+
+            game = false;
+            endedBad = true;
+      
+          }
+    
+        } else {
+          grid[pointerY][pointerX] = "[X] ";
+          System.out.println();
+          System.out.println("Nothing found!");
+          System.out.println();
+        }
+
+        //Prints updated grid
+        for (int i = 0; i < 5; i++){
+          System.out.print(i + 1 + " ");
+    
+          for (int k = 0; k < 5; k++){
+            System.out.print(grid[i][k]);
+          }
+          
+          System.out.println();
+        }
+        System.out.printf("%-2s %-3s %-3s %-3s %-3s %-3s"," ","1","2","3","4","5\n");
+        System.out.println();
+        System.out.println("Try again!");
+        System.out.println();
+
+      }
     }
 
 
