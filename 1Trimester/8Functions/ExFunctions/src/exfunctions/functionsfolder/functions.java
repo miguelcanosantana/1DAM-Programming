@@ -7,42 +7,66 @@
 package exfunctions.functionsfolder;
 
 
-public class functions {
+public class Functions {
   
 
   
-  public static boolean isCapicua (int x1) {
+  /*public static boolean isCapicua (int x1) {
     return (x1 == flipNumber (x1));
+  }*/
+  
+  //Number flip number
+  public static int flipNumber (int x1) {
+    int x1Digit;
+    int flipped = 0;
+    while (x1 !=0){
+      x1Digit = x1 % 10;
+      flipped = flipped * 10 + x1Digit;
+      x1 = x1 / 10;
+    }
+    return flipped;
+  
   }
   
-  public static boolean isPrime (int x1) {
+  
+  
+  /*public static boolean isprime (int x1) {
     return (x1 == primeNumber (x1));
-  }
+  }*/
   
-  public static int nextPrime (int x1) {
-    return (0);
-  }
   
+  //Number powered
   public static int power (int x1, int power) {
-    return  (int) Math.pow(x1, power);
+    return (int) Math.pow(x1, power);
   }
   
-  public static int digits (int x1, int backupX1, int digitsNumber, int returnTwice[]){
-    backupX1 = x1;
-    
+  //Number of digits
+  public static int digits (int x1, int digitsNumber){
     while (x1 >=1) {
       x1 = (x1 / 10);
       digitsNumber++;    
     }
-    returnTwice[0] = backupX1;
-    returnTwice[1] = digitsNumber;
     
-    return(returnTwice[]);
+    return digitsNumber;
   }
   
+  //Glues a digit to a number before it
+  public static String gluebefore (int x1, int otherNumber, String gluedNumber){
+    
+    gluedNumber = ("" + otherNumber + "" + x1 + "");
+    
+    return gluedNumber;
+  }
   
+  //Glues a digit to a number after it
+  public static String glueafter (int x1, int otherNumber, String gluedNumber){
+    
+    gluedNumber = ("" + x1 + "" + otherNumber + "");
+    
+    return gluedNumber;
+  }
   
-  
+
   
   
   

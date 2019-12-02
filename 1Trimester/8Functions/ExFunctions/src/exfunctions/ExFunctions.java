@@ -5,17 +5,31 @@
  */
 package exfunctions;
 
+import exfunctions.functionsfolder.Functions;
+
 /**
  *
  * @author migue
  */
+
+
+
+
+
+
 public class ExFunctions {
 
   /**
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    //Main code of the app
+    
+    
+    System.out.println(Functions.flipNumber(1234));
+           
+            
   }
+  
   
 }
