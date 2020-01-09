@@ -10,7 +10,8 @@ public class PooCode {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // First exercises
+    System.out.println("1) ");
   }
   
 }
