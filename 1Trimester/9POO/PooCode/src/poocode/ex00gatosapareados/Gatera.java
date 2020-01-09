@@ -22,7 +22,15 @@ public class Gatera {
     g6.setSexo("Hembra");
     
     // Aparear
-      g4.Aparea(g1);
+    Gato apareamiento1 = new Gato  ("g" + (int) (Math.random()*6+1));
+    Gato apareamiento2;
+     
+    //Comprueba que no se aparee consigo mismo
+    do{
+      apareamiento2 = new Gato ("g" + (int) (Math.random()*6+1));   
+      }while (apareamiento2.equals(apareamiento1));
+    
+      apareamiento1.aparea.(apareamiento2);
     
     
     

@@ -51,7 +51,7 @@ public class Gato {
     //Aparear
     public String aparea(Gato g){
       if ((this.sexo.equals(g.getSexo()))){
-        System.out.println("Dos gatos de un mismo sexo no se pueden aparear");
+        System.out.println("Dos gatos de un mismo sexo no se pueden aparear D':");
         return "NOgatito";
       } else {
         System.out.println("Los gatos han tenido un gatito :3");
