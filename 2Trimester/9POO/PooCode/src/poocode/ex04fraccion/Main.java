@@ -15,7 +15,6 @@ public class Main {
     
     Fraccion f1 = new Fraccion(numerator, denominator);
     
-    System.out.println(f1.inverts(numerator, denominator));
     
     
     
