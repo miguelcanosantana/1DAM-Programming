@@ -21,7 +21,6 @@ public class Terminal {
     
     
     //Getters
-
     public String getNumber() {
       return number;
     }
@@ -29,15 +28,16 @@ public class Terminal {
     public int getTimeCalled() {
       return timeCalled;
     }
-    
-    
-  
   
 
     //Telephone Calling that returns called time in total
     public int llama(Terminal number, int timeCalling){
       
+      //Number that makes a call
       this.timeCalled = timeCalled + timeCalling;
+      
+      //Number that is being called
+      number.timeCalled = timeCalled + timeCalling;
       
       return this.timeCalled;
       
