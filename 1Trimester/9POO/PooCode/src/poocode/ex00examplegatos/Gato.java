@@ -22,7 +22,7 @@ public class Gato {
     public Gato() {
       this.nombre = null;
     }
-
+    
     //El gato dice su nombre y maulla
     void maulla(){
       if (this.nombre == null) {
