@@ -2,7 +2,7 @@ package poocode.ex08terminal;
 
 public class Terminal {
   
-  //Atributes
+  //Atributes (Setting them private by default)
   private String number;
   private int timeCalled = 0;
   
@@ -14,21 +14,12 @@ public class Terminal {
       
     }
 
+    //When printed shows correct data
     @Override
     public String toString() {
       return "Nº> " + number + " - " + timeCalled +"s"+ " of speaking";
     }
     
-    
-    //Getters
-    public String getNumber() {
-      return number;
-    }
-
-    public int getTimeCalled() {
-      return timeCalled;
-    }
-  
 
     //Telephone Calling that returns called time in total
     public int llama(Terminal number, int timeCalling){
