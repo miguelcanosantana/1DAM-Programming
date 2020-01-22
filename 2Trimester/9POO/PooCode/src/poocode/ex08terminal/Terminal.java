@@ -33,12 +33,13 @@ public class Terminal {
     //Telephone Calling that returns called time in total
     public int llama(Terminal number, int timeCalling){
       
-      //Number that makes a call
+      //Adds time to Number that makes a call (Cumulative)
       this.timeCalled = timeCalled + timeCalling;
       
-      //Number that is being called
+      //Adds time to the Number that is being called (Will show later if you print it)
       number.timeCalled = timeCalling;
       
+      //Return how much time the main Number has been called
       return this.timeCalled;
       
       
