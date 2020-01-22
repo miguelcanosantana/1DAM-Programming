@@ -67,6 +67,20 @@ public class Main {
     }
     
     if (chooseAction == 2){
+      do{
+      System.out.println("Select the zone:");
+      System.out.println("");
+      System.out.println("1. Main Hall Zone.");
+      System.out.println("2. Selling Zone.");
+      System.out.println("3. VIP Zone.");
+      System.out.println("4. Exit.");
+      System.out.println("");
+      System.out.print("Input: ");
+      chooseAction= Integer.parseInt(s.nextLine());
+
+      } while ((chooseAction < 1) || (chooseAction > 4));
+      
+      
       
     }
     
