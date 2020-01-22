@@ -8,8 +8,6 @@ public class Main {
     Zona z2 = new Zona (200);
     Zona z3 = new Zona (25);
     
-    
-    
     //Program
     Scanner s = new Scanner(System.in);
     int chooseAction;
