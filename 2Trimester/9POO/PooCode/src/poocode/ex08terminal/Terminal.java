@@ -37,7 +37,7 @@ public class Terminal {
       this.timeCalled = timeCalled + timeCalling;
       
       //Number that is being called
-      number.timeCalled = timeCalled + timeCalling;
+      number.timeCalled = timeCalling;
       
       return this.timeCalled;
       
