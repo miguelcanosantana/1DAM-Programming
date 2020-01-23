@@ -11,7 +11,7 @@ public class Main {
     //Program
     Scanner s = new Scanner(System.in);
     int chooseAction;
-    int ticketsAvailable;
+    int numTicketsToClaim;
     
     do{
     System.out.println("Welcome to the sales program of Expocoches Campanillas, please, choose an action:");
@@ -25,7 +25,7 @@ public class Main {
     
     } while ((chooseAction < 1) || (chooseAction > 3));
     
-    //Show tickets
+  //1-Show tickets
     if (chooseAction == 1){
       do{
       System.out.println("Select the zone:");
@@ -64,6 +64,7 @@ public class Main {
         }      
     }
     
+  //2-Selling tickets
     if (chooseAction == 2){
       do{
       System.out.println("Select the zone:");
@@ -78,24 +79,44 @@ public class Main {
 
       } while ((chooseAction < 1) || (chooseAction > 4));
       
-      
-      
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        if (chooseAction == 1){
+          
+          do{            
+          System.out.println("How many tickets do you want?");
+          System.out.print("Input: ");
+          numTicketsToClaim= Integer.parseInt(s.nextLine());
+
+          } while (numTicketsToClaim < 1);
+           
+          z1.vender(numTicketsToClaim);
+          
+        }
+        
+        if (chooseAction == 2){
+          
+          do{            
+          System.out.println("How many tickets do you want?");
+          System.out.print("Input: ");
+          numTicketsToClaim= Integer.parseInt(s.nextLine());
+
+          } while (numTicketsToClaim < 1);
+           
+          z2.vender(numTicketsToClaim);
+          
+        }
+        
+        if (chooseAction == 3){
+          
+          do{            
+          System.out.println("How many tickets do you want?");
+          System.out.print("Input: ");
+          numTicketsToClaim= Integer.parseInt(s.nextLine());
+
+          } while (numTicketsToClaim < 1);
+           
+          z3.vender(numTicketsToClaim);
+          
+        }      
+    } 
   } 
 }
