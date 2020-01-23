@@ -6,6 +6,14 @@ public class Terminal {
   private String number;
   private int timeCalled = 0;
   
+  public class Movil {
+    
+  }
+  
+  
+  
+  
+  
   //Methods
   
     //Constructor
