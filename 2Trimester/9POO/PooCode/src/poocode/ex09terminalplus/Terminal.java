@@ -2,17 +2,9 @@ package poocode.ex09terminalplus;
 
 public class Terminal {
   
-  //Atributes (Setting them private by default)
-  private String number;
+  //Terminal has number public because is needed for it subclass
+  public String number;
   private int timeCalled = 0;
-  
-  public class Movil {
-    
-  }
-  
-  
-  
-  
   
   //Methods
   
@@ -42,4 +34,19 @@ public class Terminal {
       return this.timeCalled;
     }
     
+}
+
+class Movil extends Terminal{
+  private String tarifa;
+  
+    //Methods
+  
+      //Constructor
+      public Movil(String number, String tarifa){
+        this.number = number;
+        this.tarifa = tarifa;
+      }
+      
+      
+  
 }
