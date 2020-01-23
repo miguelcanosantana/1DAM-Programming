@@ -1,4 +1,4 @@
-package poocode.ex08terminal;
+package poocode.ex09terminalplus;
 
 public class Main {
     public static void main(String[] args) {

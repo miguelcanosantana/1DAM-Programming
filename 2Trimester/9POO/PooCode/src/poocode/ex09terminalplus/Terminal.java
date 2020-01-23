@@ -1,4 +1,4 @@
-package poocode.ex08terminal;
+package poocode.ex09terminalplus;
 
 public class Terminal {
   
@@ -31,7 +31,7 @@ public class Terminal {
       number.timeCalled = timeCalling;
       
       //Return how much time the main Number has been called
-      return this.timeCalled;    
+      return this.timeCalled;
     }
-
+    
 }
