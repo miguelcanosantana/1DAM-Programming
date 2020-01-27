@@ -2,7 +2,8 @@ package poocode.ex09terminalplus;
 
 public class Terminal {
   
-  //Terminal has number public because is needed for it subclass
+  //Terminal has number private. It is needed for it subclass
+  //but you can still use it with super.
   private String number;
   private int timeCalled = 0;
   
