@@ -21,6 +21,16 @@ public class Terminal {
       return "Nº> " + number + " - " + timeCalled +"s"+ " of speaking";
     }
     
+    //Getter
+    public String getNumber() {
+      return number;
+    }
+
+    public int getTimeCalled() {
+      return timeCalled;
+    }
+    
+    
 
     //Telephone Calling that returns called time in total
     public int llama(Terminal number, int timeCalling){
