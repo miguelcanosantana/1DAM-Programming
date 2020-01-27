@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
       
       //Creating new mobiles
+      System.out.println("Hola");
       Movil m1 = new Movil("678 11 22 33", "rata");
       Movil m2 = new Movil("644 74 44 69", "mono");
       Movil m3 = new Movil("622 32 89 09", "bisonte");
@@ -22,7 +23,7 @@ public class Main {
       //Display the time spent by all the mobile phones
       System.out.println(m1);
       System.out.println(m2);
-      System.out.println(m3);
+      System.out.println(m3); 
 
     }
 }
