@@ -9,7 +9,7 @@ public class Main {
      Scanner s = new Scanner(System.in);
      
      //Creation of new ArrayList (CAN REMOVE 1ST "<String>"?)
-     ArrayList<String> names = new ArrayList<String>();
+     ArrayList<String> names = new ArrayList();
      System.out.println("Please input names: ");
      
      
