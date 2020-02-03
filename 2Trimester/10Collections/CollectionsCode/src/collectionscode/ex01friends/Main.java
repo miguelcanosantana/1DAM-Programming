@@ -18,7 +18,7 @@ public class Main {
        names.add(s.nextLine());
      }
      
-     // Create an array from the ArrayList
+     // Create an array from the ArrayList for better printing
      String names2[] = new String[names.size()]; //Gets the size of list
      names2 = names.toArray(names2);
      
