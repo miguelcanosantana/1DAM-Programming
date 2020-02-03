@@ -23,10 +23,24 @@ public class Main {
        numbers.add (ranNum);
        
      }
-    
+     
+    System.out.println("These are the numbers:");
     System.out.println(numbers);
     
+    //Math
+    int tempNumber;
     
+      //Adding
+      int addingResult = 0;
+
+       for (int i = 0; i < length; i++){   
+         tempNumber = numbers.get(i);
+         addingResult = addingResult + tempNumber;
+         
+       }
+       
+       System.out.print("The total adding is: " + addingResult + ".");
+
     
     
     
