@@ -44,7 +44,7 @@ public class Main {
        System.out.println("The total adding is: " + addingResult + ".");
        
        //Average
-       double averageResult = (double) (addingResult / length);
+       double averageResult = ((double) addingResult / (double) length);
        System.out.println("The average is: " + averageResult + ".");
        System.out.println();
        
