@@ -1,4 +1,3 @@
-
 package collectionscode.ex01friends;
 import java.util.Scanner;
 import java.util.ArrayList;
