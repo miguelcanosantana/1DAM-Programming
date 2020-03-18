@@ -1,18 +1,15 @@
-package Exercises.Ex01PrimeNumbers;
+package Exercises.Ex01and02PrimeNumbers;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class PrimeNumbers {
+public class PrimeNumbersWritter {
   public static void main(String[] args){
   
     try {
       //Write document to written.txt
-      BufferedWriter bwr = new BufferedWriter(new FileWriter("C:\\Users\\migue\\Mega\\Git\\1DAM-Programming\\2Trimester\\11TextAndParameters\\TextAndParameters\\src\\main\\java\\Exercises\\Ex01PrimeNumbers\\primes.dat"));
+      BufferedWriter bwr = new BufferedWriter(new FileWriter("C:\\Users\\migue\\Mega\\Git\\1DAM-Programming\\2Trimester\\11TextAndParameters\\TextAndParameters\\src\\main\\java\\Exercises\\Ex01and02PrimeNumbers\\primes.dat"));
 
       //Print lines of text until no more are left, so while ends.      
         for (int i = 0; i < 500; i++) {
@@ -28,7 +25,7 @@ public class PrimeNumbers {
     
 
       //Recording Error
-    }  catch (IOException io) {
+    } catch (IOException io) {
       System.out.println("Recording Error");
       System.out.println("System error: " + io);
 
