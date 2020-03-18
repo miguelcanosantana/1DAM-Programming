@@ -1,10 +1,8 @@
 package Exercises.Ex01and02PrimeNumbers;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.IOException;
 
 public class PrimeNumbersReader {
@@ -24,7 +22,7 @@ public class PrimeNumbersReader {
     
         brd.close();
         
-
+      //If file not found print error f (Can give to it any name)
     } catch (FileNotFoundException f) {
       System.out.println("File not found.");
       System.out.println("System error: " + f);
