@@ -1,0 +1,75 @@
+1-Introducción
+  Una colección es un contenedor que agrupa elementos de un mismo tipo en una sola unidad.
+  
+  Se usa para manipulación de datos.
+  
+  Pueden representar elementos del mundo natural.
+  
+  Está dentro del paquete java.util
+  
+  El framework de colecciones de java se compone de 3 elementos:
+    -Interfaces: tipos de datos.
+    -Implementaciones: Uso de una interfaz u otra según sus características
+    -Algoritmos: Métodos para poder buscar, ordenar y clasificar.
+    
+     
+
+    
+2-Colecciones disponibles:
+
+  Iterable<E>:
+    
+    Definición: Patrón de diseño que nos permite recorrer una sucesión de elementos.
+    
+  Collection<E>: 
+  Extiende a Iterable<E> heredando su funcionalidad. 
+  Representa a un grupo de elementos.
+  El resto de interfaces heredan de él.
+  Sirve para manipular colecciones.
+  
+    Operaciones:
+      -Tamaño: size | isEmpty
+      -Comprobación: contains
+      -Añadir y eliminar: add | remove
+      -Iterar: iterator
+      -Operaciones bulk: containsAll | addAll | removeAll | removeIf | retainAll | clear
+      -Transformar en array: toArray
+      -Streams: stream | parallelStream
+  
+  Set<E>:
+    -No permite elementos duplicados.
+    -No permite acceso posicional (por ejemplo acceder al 6º elemento, al contrario que en los Arrays).
+    -Implementaciones de Set<E>:
+      
+      -HashSet<E>: Almacena sus valores en una tabla hash, no se puede predecir el orden de los elementos y proporciona el mejor rendimiento.
+      -LinkedHashSet<E>: Igual que la anterior pero se pueden mantener los elementos en un orden.
+      -TreeSet<E>: Almacena los valores en un árbol red-black. Se mantienen los elementos en orden, no se pueden insertar nulos,
+                   al contrario que el resto de implementaciones.
+   
+  List<E>:
+    -Permite elementos duplicados.
+    -Añade a Collection<E> funciones como Acceso posicional, búsqueda, Iteración extendida y Operaciones sobre un rango de elementos.
+    -Implementaciones de List<E>:
+      -ArrayList<E>: Un Array el cuál se puede modificar su longitud. Múltiples hilos.
+      -Vector<E>: Similar a ArrayList, pero con un solo hilo (sincronizado).
+      -LinkedList<E>: Usa una doble lista enlazada para guardar elementos.
+      -Queue<E>: Cola de tipo FIFO (como la cola de un supermercado).
+      
+  Map<k,v>: 
+    -No hereda de Collections<E>.
+    -Maneja pares clave, valor.
+    -Para cada clave hay un solo valor.
+    -Cada clave puede existir una sola vez en el map.
+    -Implementaciones de Map<K,V>:
+    
+      -HashMap<K,V>: Su rendimiento es excelente, no se puede saber el orden de los pares y no es sincronizada.
+      -LinkedHashMap<K,V>: Ordena según inserción.
+      -SortedMap<K,V>: Mantiene las claves en orden natural.      
+    
+  Colecciones no modificables:
+    -Si se tratan de modificar lanzan "UnsupportedOperationExcepcion"
+  
+  Colecciones sincronizadas:
+    -Aptas para múltiples hilos de ejecución.
+      
+  
